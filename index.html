@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
+<style>
+  p.card-text {
+    font-size: 12px;
+  }
+
+  small.text-body-second {
+    margin-left: 95px; 
+  }
+</style>
+
 <body>
     <div class="">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -56,7 +69,8 @@
             </div>
           </nav>
     </div>
-    <div class="container mt-3" id="containerLogin">
+<!---
+        <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -69,8 +83,9 @@
           <button type="button" class="btn btn-outline-primary mt-2">Login</button>
           <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
           <a href="#" class="text-decoration-underline">Forgot password?</a>
-  
+-->       
   <!-- Modal -->
+<!---
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -169,6 +184,57 @@
       </div>
     </div>
   </div>
-    </div>      
+    </div>
+-->
+<div class="container mt-1 row row-cols-1 row-cols-md-3 g-4 mx-auto">
+    <div class="col">
+      <div class="card h-80">
+        <img src="images/low.jpg" class="card-img-top" alt="low">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 1 Low</h5>
+          <p class="card-text">Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.</p>
+          <p class="card-text">Colour Shown: Sky J Purple/White/Sky J Light Purple</p>    
+        </div>
+        <div class="card-footer">
+          <small class="text-body-first">Price: <span style="color: #ffffff; background-color: #000000;">₱6,195</span></small>
+            <small class="text-body-second"><button type="button" class="btn btn-outline-success btn-sm me-1">Add to cart</button></small>
+            <small class="text-body-third"><button type="button" class="btn btn-outline-primary btn-sm"><i class="fas fa-heart"></i></button></small> 
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80">
+        <img src="images/mid.jpg" class="card-img-top" alt="mid">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
+          <p class="card-text">What happens when you ramp up the elegance on a classic design? The AJ1 Craft. Soft suede, hemp canvas and an exposed edge around the collar add tasteful texture to the kicks you know and love. And they're still perfect for everyday wear.</p>
+          <p class="card-text">Colour Shown: Cement Grey/White/Tech Grey/Black</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-body-first">Price: <span style="color: #ffffff; background-color: #000000;">₱7,595</span></small>
+            <small class="text-body-second"><button type="button" class="btn btn-outline-success btn-sm me-1">Add to cart</button></small>
+            <small class="text-body-third"><button type="button" class="btn btn-outline-primary btn-sm"><i class="fas fa-heart"></i></button></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/high.jpg" class="card-img-top" alt="high">
+        <div class="card-body">
+          <h5 class="card-title">Air Jordan 1 Zoom CMFT 2</h5>
+          <p class="card-text">Premium suede and Jordan Brand's signature Formula 23 foam come together to give you an extra luxurious (and extra cosy) AJ1. You don't need to play "either or" when it comes to choosing style or comfort with this one—which is nice, 'cause you deserve both.</p>
+          <p class="card-text">Colour Shown: Muslin/Black/Vivid Orange/Celestial Gold</p>    
+        </div>
+        <div class="card-footer">
+            <small class="text-body-first">Price: <span style="color: #ffffff; background-color: #000000;">₱8,095</span></small>
+            <small class="text-body-second"><button type="button" class="btn btn-outline-success btn-sm me-1">Add to cart</button></small>
+            <small class="text-body-third"><button type="button" class="btn btn-outline-primary btn-sm"><i class="fas fa-heart"></i></button></small>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>    
 </body>
 </html>
