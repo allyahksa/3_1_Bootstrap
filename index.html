@@ -18,6 +18,18 @@
   small.text-body-second {
     margin-left: 95px; 
   }
+
+  .addproducts {
+    margin-right: 15px;
+  }
+
+  .pimage {
+    margin-left: 3.5px;
+  }
+
+  .labelPImage {
+    margin-top: 12px;
+  }
 </style>
 
 <body>
@@ -56,6 +68,50 @@
                     class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                   </li>
                 </ul>
+                <div class="addproducts">
+                <button type="button" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Add a product
+                </button>
+                <!-- Add a Product Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add a Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="productname" class="form-control" id="floatingInput" placeholder="Product Name">
+            <label for="floatingInput">Product Name</label>
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Description</span>
+            <textarea class="form-control" aria-label="description"></textarea>
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text">₱</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest peso)">
+            <span class="input-group-text">.00</span>
+          </div>
+          <div class="pimage">
+            <div class="row">
+              <label class="labelPImage">Product Image</label>
+              <div class="input-group">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              </div>
+            </div>
+          </div>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add Product</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  <!-- End of Modal -->
+                </div>  
                 <form class="d-flex">
                   <button type="button" class="btn btn-primary position-relative">
                     Cart
@@ -232,9 +288,6 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </div>    
 </body>
 </html>
