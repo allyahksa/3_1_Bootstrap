@@ -51,7 +51,7 @@ function registerUser() {
     } else if (!user.birthdate) {
         return alert('Birthdate is required.')
     }
-
+    localStorage.setItem("user", JSON.stringify(user));
 }
 
 btnRegister.onclick = () => {
