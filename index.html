@@ -69,11 +69,11 @@
                   </li>
                 </ul>
                 <div class="addproducts">
-                <button type="button" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-light position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                   Add a product
                 </button>
                 <!-- Add a Product Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -125,7 +125,7 @@
             </div>
           </nav>
     </div>
-<!---
+
         <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
@@ -137,12 +137,11 @@
             <label for="floatingPassword">Password</label>
           </div>
           <button type="button" class="btn btn-outline-primary mt-2">Login</button>
-          <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
+          <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button>
           <a href="#" class="text-decoration-underline">Forgot password?</a>
--->       
-  <!-- Modal -->
-<!---
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+       
+  <!-- Register Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -151,19 +150,19 @@
         </div>
         <div class="modal-body">
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="txtRegisterEmail" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                <input type="text" class="form-control" id="txtRegisterName" placeholder="Name">
                 <label for="floatingInput">Name</label>
               </div>  
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="txtRegisterPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="txtRegisterConfirmPassword" placeholder="Password">
                 <label for="floatingPassword">Confirm Password</label>
               </div>
               <div class="container mt-3">
@@ -174,11 +173,11 @@
                     class="form-check-input"
                     type="radio"
                     name="radioGender"
-                    id="flexRadioDefault0"
+                    id="flexRadioDefaultN"
                     checked>
                     <label
                     class="form-check-label"
-                    for="flexRadioDefault0">
+                    for="flexRadioDefaultN">
                       Rather not say
                     </label>
                   </div>
@@ -187,10 +186,10 @@
                     class="form-check-input"
                     type="radio"
                     name="radioGender"
-                    id="flexRadioDefault1">
+                    id="flexRadioDefaultM">
                     <label
                     class="form-check-label"
-                    for="flexRadioDefault1">
+                    for="flexRadioDefaultM">
                       Male
                     </label>
                   </div>
@@ -199,18 +198,18 @@
                     class="form-check-input"
                     type="radio"
                     name="radioGender"
-                    id="flexRadioDefault2">
+                    id="flexRadioDefaultF">
                     <label
                     class="form-check-label"
-                    for="flexRadioDefault2">
+                    for="flexRadioDefaultF">
                       Female
                     </label>
                   </div>
                 </div>
               </div>
-            <div class="container">
+            <div class="container mt-3">
               <div class="form-floating">
-                <select id="floatingSelect" class="form-select" aria-label="Default select example">
+                <select id="selectRegisterYearLevel" class="form-select" aria-label="Default select example">
                   <option selected>Select year level...</option>
                   <option value="1">1st Year</option>
                   <option value="2">2nd Year</option>
@@ -223,29 +222,29 @@
             <div class="mt-3">
               <div class="input-group">
                 <span class="input-group-text">Address</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
+                <textarea id="txtRegisterAddress" class="form-control" aria-label="With textarea"></textarea>
               </div>
             </div> 
             <div class="mt-3">
               <div class="form-floating mb-3">
-                <input type="date" class="form-control" id="floatingDate" placeholder="Birthdate">
+                <input type="date" class="form-control" id="txtRegisterBirthdate" placeholder="Birthdate">
                 <label for="floatingDate">Birthdate</label>
               </div>
             </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Register</button>
+          <button id="btnRegister" type="button" class="btn btn-success">Register</button>
         </div>
       </div>
     </div>
   </div>
     </div>
--->
-<div class="container mt-1 row row-cols-1 row-cols-md-3 g-4 mx-auto">
+
+<div hidden class="container mt-1 row row-cols-1 row-cols-md-3 g-4 mx-auto">
     <div class="col">
       <div class="card h-80">
-        <img src="images/low.jpg" class="card-img-top" alt="low">
+        <img src="low.jpg" class="card-img-top" alt="low">
         <div class="card-body">
           <h5 class="card-title">Air Jordan 1 Low</h5>
           <p class="card-text">Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.</p>
@@ -260,7 +259,7 @@
     </div>
     <div class="col">
       <div class="card h-80">
-        <img src="images/mid.jpg" class="card-img-top" alt="mid">
+        <img src="mid.jpg" class="card-img-top" alt="mid">
         <div class="card-body">
           <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
           <p class="card-text">What happens when you ramp up the elegance on a classic design? The AJ1 Craft. Soft suede, hemp canvas and an exposed edge around the collar add tasteful texture to the kicks you know and love. And they're still perfect for everyday wear.</p>
@@ -275,7 +274,7 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="images/high.jpg" class="card-img-top" alt="high">
+        <img src="high.jpg" class="card-img-top" alt="high">
         <div class="card-body">
           <h5 class="card-title">Air Jordan 1 Zoom CMFT 2</h5>
           <p class="card-text">Premium suede and Jordan Brand's signature Formula 23 foam come together to give you an extra luxurious (and extra cosy) AJ1. You don't need to play "either or" when it comes to choosing style or comfort with this one—which is nice, 'cause you deserve both.</p>
@@ -288,6 +287,10 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </div>    
 </body>
+<footer><script src="./index.js"></script></footer>
 </html>
